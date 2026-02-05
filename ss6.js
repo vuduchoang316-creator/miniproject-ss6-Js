@@ -49,7 +49,6 @@ if (loginSuccessfull) {
         switch (choice) {
             case 1:
                 bookName = prompt("Một chuỗi ký tự chứa tên các cuốn sách, phân cách bởi dấu phẩy (Ví dụ: Sử,Địa,Lý)");
-
                 let temp=bookName.split(",");
                 for(let i = 0 ; i < temp.length ; i++){
                     let arrayBook=temp[i].trim();
@@ -104,8 +103,8 @@ if (loginSuccessfull) {
                 
                 break;
             case 6:
-                let bookArray = bookArray.concat(other);
-                console.log(bookArray);
+                let double = bookArray.concat(other);
+                console.log(double);
                 alert("Đã nhập kho sách thành công");
                 
                 break;
